@@ -31,10 +31,11 @@ stream = []
 log = "0.4.17"
 futures-util = { version = "0.3.28", default-features = false, features = ["sink", "std"] }
 tokio = { version = "1.0.0", default-features = false, features = ["io-util"] }
+tungstenite = { git = "https://github.com/nathanielfernandes/tungstenite-rs", default-features = false }
 
-[dependencies.tungstenite]
-version = "0.20.0"
-default-features = false
+# [dependencies.tungstenite]
+# version = "0.20.0"
+# default-features = false
 
 [dependencies.native-tls-crate]
 optional = true
